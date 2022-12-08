@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #192440;
+    --secondary-color: #00ffad;
+    --tertiary-color: #292b2c;
+    --quaternary-color: #ffffff;
+}
+
+html {
+    font-size: 10px;
+    font-family: Ubuntu, sans-serif;
+    line-height: 1.5;
+}
+
+/* Write your code below */
+
+/* banner start  */
+
+#banner {
+  background-image: url("./images/banner-bg-image.jpg");
+  background-size: cover;
+  color: var(--quaternary-color);
+  padding: 64px 0px;
+}
+
+header img {
+  max-width: 80px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color:var(--quaternary-color);
+  font-size: 20px;
+}
+
+.container p {
+  font-size: 20px;
+}
+
+/* banner start  */
+/* protection start */
+
+.protection {
+  text-align: center;
+}
+
+.protection .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.protection .cards .card {
+  max-width: 300px;
+}
+
+.protection h2 {
+  padding-bottom: 40px;
+}
+
+.protection h4 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+/* protection end */
+/* features start */
+.features .feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 45px;
+  padding-top: 45px;
+}
+
+.features .feature p {
+  font-size: 16px;
+}
+
+.feature-1-wrapper {
+  background-image: linear-gradient(to bottom right,var(--quaternary-color) 0% 50%,var(--secondary-color) 50% 100%);;
+}
+
+.feature-2-wrapper {
+  background-color: var(--secondary-color);
+}
+
+@media not (min-width: 992px) {
+  .feature-1-wrapper {
+      background-image: none;
+      background-color: var(--secondary-color);
+  }
+  .features .feature {
+      flex-direction: column;
+  }
+  .feature-2 img {
+      order: 1;
+  }
+
+}
+
+/* features end */
+/* Write your code above */
+
+h1 {
+    font-size: 7.2rem;
+    margin: 4.8rem 0;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+p, li, label {
+    font-size: 1.6rem;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.font-weight-light {
+    font-weight: 300;
+    text-decoration: none;
+
+}
+
+.container {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
