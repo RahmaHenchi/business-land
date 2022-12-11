@@ -118,6 +118,191 @@ header a {
 }
 
 /* features end */
+/* Pricing start */
+
+.pricing {
+  text-align: center;
+}
+
+.pricing h2  {
+  margin: 48px 0;
+}
+
+.pricing .cards {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pricing .card {
+  border-radius: 5px;
+  padding: 24px 15px;
+  width: 100%;
+  max-width: 300px;
+  background: lightgray;
+}
+
+.pricing .card.dark {
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+}
+
+.pricing h4 {
+  font-size: 2.4rem;
+}
+
+.pricing p  {
+  padding: 5px 0;
+}
+
+.pricing span  {
+  font-size: 9rem;
+}
+
+/* Pricing end */
+/* Partners start */
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* Partners end */
+/* Contact start */
+#contact .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.contact-info, .contact-form {
+  flex-grow: 1;
+}
+.list-unstyled {
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+.first-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 30px;
+}
+
+.first-row .form-group {
+  flex-grow: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+
+#contact {
+  background-image: url('./images/contact-bg-image.jpg');
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-info {
+  color: white;
+}
+
+#contact label {
+  color: var(--secondary-color);
+}
+
+input, textarea {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: var(--quaternary-color);
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+/* Contact end */
+/* Footer start */
+footer {
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+  padding: 32px 48px;
+  font-size: 16px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#social-media {
+  display: flex;
+  gap: 20px;
+}
+
+#social-media a {
+  background-color: var(--quaternary-color);
+  color: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media not (min-width: 768px) {
+  footer .container {
+      flex-direction: column;
+  }
+}
+
+/* Footer end */
+/* Buttons start */
+.btn {
+  border: 2px solid transparent;
+  padding: 15px 30px;
+  margin: 24px 0;
+  font-size: 16px;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
+.btn-outline-secondary {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+  background-color: transparent;
+}
+/* Buttons end */
+
 /* Write your code above */
 
 h1 {
